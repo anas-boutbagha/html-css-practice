@@ -1,17 +1,355 @@
-header {position: fixed; overflow: hidden; }
-#top-header { height: 60px; }
-#logo { float: left; width: 30%; }
-#logo img { width: 60%; padding: 10px 0; }
-#menu { float: right; width: 70%; }
-#menu ul { background: #ffffff; margin: 0; padding: 0; list-style: none; }
-#menu li { display: inline-block; }
-#menu li a {
-color: #FFF;
-padding: 0 1.5em;
-text-decoration: none;
-line-height: 60px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#menu li:hover a {
-background: #FFF;
-color: #03437b;
+header{
+width: 100%;
+height: 65px;
+display: flex;
+margin-top: 15px;
+}
+header > .logo{
+padding-left: 16px;
+margin-left: 70px;
+margin-right: 9px;
+padding-right: 20px;
+color: #0A1222;
+font-family: 'Inter', sans-serif;
+font-weight: 900;
+font-size: 32px;
+line-height: 120%;
+letter-spacing: 0%;
+}
+
+header > .menu{
+width: 53%;
+height: 52px;
+margin-top: 18px;
+}
+
+header > .menu > a{
+margin-left: 40px;  
+color: black; 
+text-decoration-line: none;
+font-family: 'Inter', sans-serif;
+font-weight: 500;
+font-size: 15px;
+line-height: 120%;
+letter-spacing: 0%;
+}
+
+header > .menu > a:first-child{
+    text-decoration: underline;
+    color: #034BFF;
+}
+
+header > .buton_div >button{
+width: 200px;
+height: 52px;
+background-color:#034BFF;
+opacity: 1;
+border-radius: 5px;
+margin-top: 0px;
+border-style: none;
+font-family: 'Inter', sans-serif;
+font-weight: 700;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+color: white;
+margin-left: 40px;
+}
+header > .buton_div{
+    margin-left: 110px;
+    margin-top: 5px;
+}
+
+header > .buton_div >img{
+margin-top: 15px;
+width: 30px;
+height: 30px;
+}
+
+
+
+
+#hero{
+width: 100%;
+height: 700px;
+display: flex;
+}
+
+#hero > div:first-child{
+height: 100%;
+width:45%;
+background: #08111D;
+}
+
+#hero > div:first-child >p:first-child{
+color: white;
+width: 470px;
+height: 91px;
+opacity: 1;
+top: 50px;
+left: 56px;
+font-family: 'Inter', sans-serif;
+font-weight: 800;
+font-size: 110px;
+line-height: 120%;
+letter-spacing: 0%;
+margin-left: 90px;
+margin-top: 70px;
+
+}
+
+#hero > div:first-child >div:nth-child(2){
+color: #034BFF;
+display: flex;
+margin-top: 20px;
+}
+
+#hero > div:first-child >div:nth-child(2)>p:first-child{
+width: 270px;
+height: 100px;
+opacity: 1;
+top: 50px;
+left: 56px;
+font-family: 'Inter', sans-serif;
+font-weight: 900;
+font-size: 120px;
+line-height: 120%;
+letter-spacing: 0px;
+margin-left: 90px;
+}
+
+#hero > div:first-child >div:nth-child(2)>p:last-child{
+color: #C7F64A;
+font-family: 'Inter', sans-serif;
+font-weight: 900;
+font-size: 110px;
+line-height: 120%;
+letter-spacing: 0%;
+width: 80px;
+height: 79px;
+opacity: 1;
+margin-left: 90px;
+}
+
+#hero > div:first-child >p:nth-child(3){
+color: white;
+margin-left: 90px;
+margin-bottom: 22px;
+font-family: 'Inter', sans-serif;
+font-weight: 800;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: 0%;
+margin-top: 35px;
+}
+
+#hero > div:first-child >p:nth-child(4){
+color: white;
+margin-left: 90px;
+margin-bottom: 22px;
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 22px;
+line-height: 120%;
+letter-spacing: 0%;
+}
+
+#hero_butons{
+    display: flex;
+    margin-top: 40px;
+}
+
+#buton_hero_1{
+color: white;
+background: #034BFF;
+width: 270px;
+height: 70px;
+opacity: 1;
+top: 334px;
+left: 61px;
+border-radius: 5px;
+margin-left: 90px;
+border-color: #034BFF;
+font-size: 20px;
+
+}
+
+#buton_hero_2{
+color: white;
+background: #00000000;
+width: 265px;
+height: 70px;
+opacity: 1;
+top: 334px;
+left: 61px;
+border-radius: 5px;
+margin-left: 30px;
+border-color: #034BFF;
+font-size: 20px;
+
+}
+
+#hero_examples{
+display: flex;
+margin-top: 35px;
+margin-left: 70px;
+}
+
+#dwawr{
+display: flex; 
+margin-left: 40px;
+}
+
+#dwawr > span:first-child{
+border-radius: 50%;
+background-color: #b8c9cb;
+width: 40px;
+height: 40px;
+padding-left: 13px;
+padding-top: 5px;
+font-weight: 800;
+font-size: 20px;
+font-family: 'Inter', sans-serif;
+}
+
+#dwawr > span:nth-child(2){
+border-radius: 50%;
+background-color: #D7C3B6;
+width: 40px;
+height: 40px;
+padding-left: 13px;
+padding-top: 5px;
+font-weight: 800;
+font-size: 20px;
+font-family: 'Inter', sans-serif;
+}
+
+#dwawr > span:nth-child(3){
+border-radius: 50%;
+background-color: #b8c9cb;
+width: 40px;
+height: 40px;
+padding-left: 13px;
+padding-top: 5px;
+font-weight: 800;
+font-size: 20px;
+font-family: 'Inter', sans-serif;
+}
+
+#dwawr > span:last-child{
+border-radius: 50%;
+background-color: #D7C3B6;
+width: 40px;
+height: 40px;
+padding-left: 12px;
+padding-top: 5px;
+font-weight: 800;
+font-size: 20px;
+font-family: 'Inter', sans-serif;
+}
+#hero_examples > p{
+color: white; 
+margin-left: 25px;
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+letter-spacing: 1px;
+
+}
+#hero > div:last-child{
+height: 100%;
+width:59%;
+background-color: #08111D;
+}
+#hero > div:last-child > img{
+width: 100%;
+height: 100%;
+opacity: 1;
+border-radius: 5px;
+}
+
+
+
+#chiffres-cles{
+width: 100%;
+height: 92px;
+display: flex;
+}
+
+#chiffres-cles > div:first-child{
+height: 92px;
+width:25%;
+}
+
+#chiffres-cles > div:nth-child(3){
+height: 92px;
+width:25%;
+}
+
+#chiffres-cles > div:nth-child(5){
+height: 92px;
+width:25%;
+}
+
+#chiffres-cles > div:last-child{
+height: 92px;
+width:25%;
+}
+
+.chiffres-cles_parts{
+    display: flex;
+}
+
+.chiffres-cles_logos{
+width: 42px;
+height: 36px;
+opacity: 1;
+top: 29px;
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 55px;
+line-height: 120%;
+letter-spacing: 0%;
+margin-left: 80px;
+margin-top: 15px;
+color: #034BFF;
+margin-right: 30px;
+}
+
+.chiffres-cles_nums{
+font-family: 'Inter', sans-serif;
+font-weight: 800;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: 0%;
+margin-top: 13px;
+}
+#separateur{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#campus{
+width: 100%;
+height: 282px;
+display: flex;
+}
+
+#campus > div:first-child{
+height: 282px;
+width:38%;
+background-color: rgb(47, 45, 45);
+}
+#campus > div:last-child{
+height: 282px;
+width:60%;
+background-color: rgb(228, 196, 196);
 }
